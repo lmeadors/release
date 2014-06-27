@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elm</groupId>
 	<artifactId>release</artifactId>
-	<version>1.5</version>
+	<version>1.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>release</name>
 	<url>http://maven.apache.org</url>
@@ -20,10 +20,13 @@
 	</dependencies>
 	<scm>
 		<connection>scm:git:ssh://github.com/lmeadors/release.git</connection>
-		<developerConnection>scm:git:ssh://github.com/lmeadors/release.git</developerConnection>
-		<url>scm:git:ssh://github.com/lmeadors/release.git</url>
-	  <tag>release-1.5</tag>
-  </scm>
+		<developerConnection>scm:git:ssh://git@github.com/lmeadors/release.git</developerConnection>
+<!--
+		<connection>scm:git:ssh://github.com/mybatis/mybatis-3.git</connection>
+		<url>http://github.com/mybatis/mybatis-3</url>
+		<developerConnection>scm:git:git+ssh://git@github.com/mybatis/mybatis-3.git</developerConnection>
+-->
+	</scm>
 	<build>
 		<finalName>${project.version}-${maven.build.timestamp}</finalName>
 		<plugins>
