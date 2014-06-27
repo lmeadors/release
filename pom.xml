@@ -21,13 +21,8 @@
 	<scm>
 		<connection>scm:git:ssh://github.com/lmeadors/release.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/lmeadors/release.git</developerConnection>
-<!--
-		<connection>scm:git:ssh://github.com/mybatis/mybatis-3.git</connection>
-		<url>http://github.com/mybatis/mybatis-3</url>
-		<developerConnection>scm:git:git+ssh://git@github.com/mybatis/mybatis-3.git</developerConnection>
--->
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 	<build>
 		<finalName>${project.version}-${maven.build.timestamp}</finalName>
 		<plugins>

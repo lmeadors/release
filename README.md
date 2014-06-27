@@ -8,5 +8,5 @@ Release process
 
 Once you're "feature complete", create a branch:
 
-	$ mvn release:branch -DbranchName=1.1
+	$ mvn release:branch -DbranchName=1.6
 
