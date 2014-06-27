@@ -21,7 +21,7 @@
 	<scm>
 		<connection>scm:git:ssh://github.com/lmeadors/release.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/lmeadors/release.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>1.6</tag>
 	</scm>
 	<build>
 		<finalName>${project.version}-${maven.build.timestamp}</finalName>
