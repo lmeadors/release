@@ -19,7 +19,7 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<connection>scm:git:git://github.com/lmeadors/release</connection>
+		<connection>scm:git:https://github.com/lmeadors/release</connection>
 	</scm>
 	<build>
 		<finalName>${project.version}-${maven.build.timestamp}</finalName>
