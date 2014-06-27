@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.elm</groupId>
 	<artifactId>release</artifactId>
-	<version>1.1.2-SNAPSHOT</version>
+	<version>1.1.2</version>
 	<packaging>jar</packaging>
 	<name>release</name>
 	<url>http://maven.apache.org</url>
@@ -20,6 +20,7 @@
 	</dependencies>
 	<scm>
 		<connection>scm:git:https://github.com/lmeadors/release.git</connection>
+    <tag>@{project.version}</tag>
   </scm>
 	<build>
 		<finalName>${project.version}-${maven.build.timestamp}</finalName>
