@@ -51,12 +51,8 @@
 			<plugin>
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.9</version>
-				<configuration>
-					<pushChanges>false</pushChanges>
-				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5</version>
 			</plugin>
