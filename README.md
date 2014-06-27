@@ -23,3 +23,9 @@ Next, switch to that branch and do the release:
 
 That's going to ask you 3 questions:
 
+	What is the release version for "release"? (com.elm:release) 1.7: : 1.7.0
+	What is SCM release tag or label for "release"? (com.elm:release) release-1.7.0: : 1.7.0
+	What is the new development version for "release"? (com.elm:release) 1.7.1-SNAPSHOT: : 
+
+The first two defaults are wrong, so you have to fix them; the last one is correct.
+
