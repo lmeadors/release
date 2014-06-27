@@ -6,7 +6,7 @@ This is a test
 Release process
 ----
 
-Create a branch:
+Once you're "feature complete", create a branch:
 
 	$ mvn release:branch -DbranchName=1.1
 
