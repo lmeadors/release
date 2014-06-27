@@ -43,4 +43,27 @@ need to merge that manually. The two things that will conflict are:
 Release process - point release (eg, x.y.1 to x.y.2)
 ----
 
-Similar process
+Similar process - just no branch creation. Complete and commit your changes on the release branch (we'll assume it's `1.7` here)
+
+	$ mvn release:prepare release:perform
+
+That will ask you 3 questions:
+
+	What is the release version for "release"? (com.elm:release) 1.7.1: : 
+	What is SCM release tag or label for "release"? (com.elm:release) release-1.7.1: : 1.7.1
+	What is the new development version for "release"? (com.elm:release) 1.7.2-SNAPSHOT: : 
+
+The second one is now what we wanted, so change it. The others are right, so press enter for those.
+
+The release artifact is in `target/checkout/target` - deploy away.
+
+Next, you need to merge from the new branch to the `develop` branch:
+
+	$ git checkout develop
+	$ git merge 1.7
+
+Again, the pom will have conflicts, the steps are the same as above. The two things that will conflict are:
+
+- `/project/version` - you'll want the one from develop
+- `/project/scm/tag` - you'll want the one that is `<tag>HEAD</tag>` 
+
